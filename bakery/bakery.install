@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Db table for bakery functionlities.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+
+/**
+ * Schema for bakery database table.
+ */
+function bakery_schema() {
+  return [
+    'bakery_user' => [
+      'description' => 'Keep track of UID on subsites, master only.',
+      'fields' => [
+        'uid' => [
+          'description' => 'User ID on master site.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+        ],
+        'slave' => [
+          'description' => 'Slave site.',
+          'type' => 'varchar',
+          'length' => 128,
+          'not null' => TRUE,
+        ],
+        'slave_uid' => [
+          'description' => 'User ID on slave site.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+        ],
+      ],
+      'primary key' => ['uid', 'slave'],
+    ],
+  ];
+}

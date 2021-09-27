@@ -1,0 +1,16 @@
+{
+  "name": "drupal/bakery",
+  "description": "Bakery provides a \"single sign on\" feature for Drupal based sites that are on the same second-level domain",
+  "type": "drupal-module",
+  "homepage": "http://drupal.org/project/bakery",
+  "support": {
+    "issues": "http://drupal.org/project/bakery",
+    "irc": "irc://irc.freenode.org/drupal-contribute",
+    "source": "http://cgit.drupalcode.org/bakery"
+  },
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": {
+    "phpseclib/mcrypt_compat": "^1.0"
+  }
+}

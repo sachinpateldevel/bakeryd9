@@ -1,0 +1,10 @@
+name: Bakery
+description: 'Provides single-sign-on support across second-level domains.'
+core_version_requirement: ^8.8.0 || ^9
+package: Single sign on
+configure: bakery.admin_settings
+php: 5.1.2
+version: 9.x-dev
+project: bakery
+datestamp: '1360785914'
+type: module
